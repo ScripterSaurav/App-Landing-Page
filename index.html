@@ -165,9 +165,7 @@
             <p>7+<span>Rated for 7+</span></p>
         </div>
         
-        <a href="assets/app.apk" download="app.apk">
-    <button style="width: 100%;">Install</button>
-</a>
+        <button style="width: 100%;" onclick="downloadFile()">Install</button>
     </section>
     
     <section class="tags">
@@ -221,7 +219,18 @@
 
     <footer>
         <p>&copy; 2024 Your App Name. All rights reserved.</p>
-    </footer>
+    </footer> 
+
+    <script>
+function downloadFile() {
+    const link = document.createElement('a');
+    link.href = 'assets/app.apk';
+    link.download = 'app.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
 
 </body>
 </html>

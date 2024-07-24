@@ -16,7 +16,12 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        
+        .header {
+            background-color: #3DDC84;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
         .app-details {
             display: flex;
             flex-wrap: wrap;
@@ -142,13 +147,17 @@
 </head>
 <body>
 
-    
+    <div class="header">
+        <h3>App Name</h3>
+        <h2>Get The Best online Stream app</h2>
+        <p>Your go-to solution for everything! Stream or download free without login and irritating ads.</p>
+    </div>
 
     <section class="app-details">
     	<div class="app-image-container">
         <img src="https://textblast.learn.uno/assets/images/appicon.png" alt="App Image" class="app-image">
         	
-       <button style="width: 100%; background: grey; border: 1px solid #ddd;">share</button>
+       <button style="width: 100%; background: grey; border: 1px solid #ddd;" onclick="shareContent()">Share</button>
         	</div>
         
         <div class="app-info">
@@ -220,18 +229,36 @@
     <footer>
         <p>&copy; 2024 Your App Name. All rights reserved.</p>
     </footer> 
-
+    
     <script>
 function downloadFile() {
     const link = document.createElement('a');
     link.href = 'assets/app.apk';
-    link.download = 'Demo app.apk';
+    link.download = 'app.apk';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
 </script>
 
+<script>
+function shareContent() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Check this out!',
+            text: 'Here is something interesting.',
+            url: window.location.href
+        }).then(() => {
+            console.log('Successful share');
+        }).catch((error) => {
+            console.error('Error sharing:', error);
+        });
+    } else {
+        alert('Share not supported on this browser.');
+    }
+}
+</script>
+
+
 </body>
 </html>
-

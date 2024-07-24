@@ -102,6 +102,9 @@ body {
             height: 250px;
             background-color: white;
             border-radius: 8px;
+        } 
+         .screenshots::-webkit-scrollbar {
+            height: 0;  /* Hide scrollbar */
         }
         .screenshot {
             max-width: 150px;

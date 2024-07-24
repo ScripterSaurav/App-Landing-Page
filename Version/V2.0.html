@@ -40,8 +40,10 @@
     }
         .app-image {
             max-width: 150px;
+            height: 100px;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            background: black;
         }
         .app-info {
             max-width: 500px;
@@ -70,6 +72,7 @@
             overflow-x: auto;
             flex-direction: row;
             margin-top: 20px;
+            border-radius: 5px;
             background-color: #f0f0f0;
         }
         .extra-info p {
@@ -100,15 +103,22 @@
             overflow-x: auto;
             padding: 10px;
             margin: 20px;
+            height: 250px;
             background-color: white;
             border-radius: 8px;
         }
-        .screenshot, .video {
+        .screenshot {
             max-width: 150px;
             margin: 10px;
             border-radius: 8px;
             flex-shrink: 0;
-        }
+        } 
+        .demo-video {
+        	max-width: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            flex-shrink: 30;
+         }
         .features {
             background-color: white;
             padding: 20px;
@@ -139,16 +149,14 @@
     	<div class="app-image-container">
         <img src="https://textblast.learn.uno/assets/images/appicon.png" alt="App Image" class="app-image">
         	
-        <p>Size: 10mb</p>
+       <button style="width: 100%; background: grey; border: 1px solid #ddd;">share</button>
         	</div>
         
         <div class="app-info">
             <h1>App Name</h1>
             <p>webcoderhub</p>
+            <p>Version: 1.0.0</p>
             
-            
-            
-            <button>Install</button>
         </div> 
         
         <div class="extra-info">
@@ -171,13 +179,13 @@
     </section>
 
     <section class="screenshots">
-    	<video controls class="video">
+    	<video controls class="demo-video">
             <source src="demo-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <img src="screenshot1.png" alt="Screenshot 1" class="screenshot">
-        <img src="screenshot2.png" alt="Screenshot 2" class="screenshot">
-        <img src="screenshot3.png" alt="Screenshot 3" class="screenshot">
+        <img src="https://textblast.learn.uno/assets/images/screenshots/0a.png" alt="Screenshot 1" class="screenshot">
+        <img src="https://textblast.learn.uno/assets/images/screenshots/0b.png" alt="Screenshot 2" class="screenshot">
+        <img src="https://textblast.learn.uno/assets/images/screenshots/1.png" alt="Screenshot 3" class="screenshot">
     </section>
 
     <section class="features">

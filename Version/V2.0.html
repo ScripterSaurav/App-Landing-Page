@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Style Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #3DDC84;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .app-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+        } 
+        .app-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+        .app-image {
+            max-width: 150px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .app-info {
+            max-width: 500px;
+        }
+        .app-info h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .app-info p {
+            margin-top: 10px;
+        } 
+        button {
+            padding: 10px 20px;
+            background-color: #3DDC84;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #35c075;
+        } 
+        .extra-info {
+            display: flex;
+            overflow-x: auto;
+            flex-direction: row;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+        }
+        .extra-info p {
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .tags {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        .tag {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            white-space: nowrap;
+        }
+        .screenshots {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .screenshot, .video {
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .features {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            flex-grow: 1;
+        }
+        .feature {
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h3>App Name</h3>
+        <h2>Get The Best online Stream app</h2>
+        <p>Your go-to solution for everything! Stream or download free without login and irritating ads.</p>
+    </div>
+
+    <section class="app-details">
+    	<div class="app-image-container">
+        <img src="https://textblast.learn.uno/assets/images/appicon.png" alt="App Image" class="app-image">
+        	
+        <p>Size: 10mb</p>
+        	</div>
+        
+        <div class="app-info">
+            <h1>App Name</h1>
+            <p>webcoderhub</p>
+            
+            
+            
+            <button>Install</button>
+        </div> 
+        
+        <div class="extra-info">
+        	<p>Rating: ★★★★☆</p>
+            <p>Size: 10mb</p>
+            <p>Downloads: 100k</p>
+        </div>
+        
+        <button style="width: 100%;">Install</button>
+    </section>
+    
+    <section class="tags">
+        <div class="tag">Role Playing</div>
+        <div class="tag">MMORPG</div>
+        <div class="tag">Online</div>
+        <div class="tag">Adventure</div>
+        <div class="tag">Action</div>
+        <div class="tag">Strategy</div>
+        <!-- Add more tags as needed -->
+    </section>
+
+    <section class="screenshots">
+    	<video controls class="video">
+            <source src="demo-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="screenshot1.png" alt="Screenshot 1" class="screenshot">
+        <img src="screenshot2.png" alt="Screenshot 2" class="screenshot">
+        <img src="screenshot3.png" alt="Screenshot 3" class="screenshot">
+    </section>
+
+    <section class="features">
+        <h2>About This App</h2>
+        <div class="feature">
+            <p>Fast and Secure: Our app provides blazing fast performance with top-notch security.</p>
+        </div>
+        <div class="feature">
+            <p>User-Friendly: Easy to use interface that ensures a seamless experience.</p>
+        </div>
+        <div class="feature">
+            <p>24/7 Support: Our team is available round the clock to help you with any issues.</p>
+        </div> 
+        
+        <h5>Updated On</h5>
+        <div class="feature">
+            <p>Jul 23, 2024</p>
+            </div> 
+            
+            <h3>Data safety</h3>
+        <div class="feature">
+            <p>Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.</p>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your App Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

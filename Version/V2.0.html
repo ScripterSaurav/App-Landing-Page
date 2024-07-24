@@ -157,7 +157,7 @@
     	<div class="app-image-container">
         <img src="https://textblast.learn.uno/assets/images/appicon.png" alt="App Image" class="app-image">
         	
-       <button style="width: 100%; background: grey; border: 1px solid #ddd;">share</button>
+       <button style="width: 100%; background: grey; border: 1px solid #ddd;" onclick="shareContent()">Share</button>
         	</div>
         
         <div class="app-info">
@@ -174,7 +174,7 @@
             <p>7+<span>Rated for 7+</span></p>
         </div>
         
-        <button style="width: 100%;">Install</button>
+        <button style="width: 100%;" onclick="downloadFile()">Install</button>
     </section>
     
     <section class="tags">
@@ -209,9 +209,13 @@
             <p>24/7 Support: Our team is available round the clock to help you with any issues.</p>
         </div> 
         
-        <h5>Updated On</h5>
+        <h4>What's new 🦋</h4>
         <div class="feature">
-            <p>Jul 23, 2024</p>
+            <p>Last Updated on Jul 23, 2024</p>
+            <p>Every week we polish up the app to make it faster and better than ever. Tell us if you like this newest version</p>
+            <li>Bug fix</li>
+            <li>New features added</li>
+            <li>Enhanced</li>
             </div> 
             
             <h3>Data safety</h3>
@@ -228,7 +232,37 @@
 
     <footer>
         <p>&copy; 2024 Your App Name. All rights reserved.</p>
-    </footer>
+    </footer> 
+    
+    <script>
+function downloadFile() {
+    const link = document.createElement('a');
+    link.href = 'assets/app.apk';
+    link.download = 'app.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+<script>
+function shareContent() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Check this out!',
+            text: 'Here is something interesting.',
+            url: window.location.href
+        }).then(() => {
+            console.log('Successful share');
+        }).catch((error) => {
+            console.error('Error sharing:', error);
+        });
+    } else {
+        alert('Share not supported on this browser.');
+    }
+}
+</script>
+
 
 </body>
 </html>

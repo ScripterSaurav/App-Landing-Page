@@ -81,7 +81,9 @@ body {
             background-color: white;
             border-radius: 5px;
         }
-        
+        .tags::-webkit-scrollbar {
+            height: 0;  /* Hide scrollbar */
+        }
         .tag {
             display: inline-block;
             margin-right: 10px;

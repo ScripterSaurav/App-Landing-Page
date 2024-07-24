@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="max-image-preview:large, index, follow">
+
+    <!-- Meta tags for social sharing -->
+    <meta name="description" content="Stream online or download your favorite movies, animes and web-series Free. Without login and irritating ads">
+    <meta name="keywords" content="Netflix, amazonPrime, youtube, stream online">
+    <meta name="author" content="watchOflix">
+  
+    <!-- Open Graph meta tags for Facebook, Twitter, etc. -->
+    <meta property="og:title" content="WatchOFlix">
+    <meta property="og:description" content="Stream online or download your favorite movies, animes and web-series Free. Without login and irritating ads">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2024/05/26/15/27/anime-8788959_1280.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+   
     <title>App Store Style Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    	
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -102,6 +121,7 @@
             margin-right: 10px;
             padding: 5px 10px;
             background-color: #f0f0f0;
+            font-size: 12px;
             border-radius: 5px;
             border: 1px solid #ddd;
             white-space: nowrap;
@@ -157,7 +177,7 @@
     	<div class="app-image-container">
         <img src="https://textblast.learn.uno/assets/images/appicon.png" alt="App Image" class="app-image">
         	
-       <button style="width: 100%; background: grey; border: 1px solid #ddd;" onclick="shareContent()">Share</button>
+       <button style="width: 100%; background: grey; border: 1px solid #ddd;" onclick="shareContent()"><i class="fa fa-share-alt"></i> Share</button>
         	</div>
         
         <div class="app-info">
@@ -168,7 +188,7 @@
         </div> 
         
         <div class="extra-info">
-        	<p>4.5★<span>Rating</span></p><hr>
+        	<p>4.5<span>Rating</span></p><hr>
             <p>10mb<span>Size</span></p><hr>
             <p>+100k<span>Downloads</span></p><hr>
             <p>7+<span>Rated for 7+</span></p>
@@ -182,8 +202,7 @@
         <div class="tag">MMORPG</div>
         <div class="tag">Online</div>
         <div class="tag">Adventure</div>
-        <div class="tag">Action</div>
-        <div class="tag">Strategy</div>
+        <div class="tag">Arcade</div>
         <!-- Add more tags as needed -->
     </section>
 
@@ -209,9 +228,13 @@
             <p>24/7 Support: Our team is available round the clock to help you with any issues.</p>
         </div> 
         
-        <h5>Updated On</h5>
+        <h4>What's new <i class="fa fa-tag"></i></h4>
         <div class="feature">
-            <p>Jul 23, 2024</p>
+            <p>Last Updated on Jul 23, 2024</p>
+            <p>Every week we polish up the app to make it faster and better than ever. Tell us if you like this newest version</p>
+            <li>Bug fix</li>
+            <li>New features added</li>
+            <li>Enhanced</li>
             </div> 
             
             <h3>Data safety</h3>
@@ -227,6 +250,7 @@
     </section>
 
     <footer>
+    	<p>Made  with by ScripterSaurav</p>
         <p>&copy; 2024 Your App Name. All rights reserved.</p>
     </footer> 
     

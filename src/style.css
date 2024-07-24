@@ -1,1 +1,188 @@
-
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .app-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+        } 
+        .app-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .app-image {
+            max-width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background: black;
+        }
+        .app-info {
+            max-width: 500px;
+        }
+        .app-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .app-info p {
+            margin-top: 19px; /* Space between info text and play button*/
+        } 
+        button {
+            padding: 10px 20px;
+            background-color: #3DDC84;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #35c075;
+        } 
+        .extra-info {
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            flex-direction: row;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        .extra-info p {
+            display: inline-block;
+            margin: 5px 5px;
+            text-align: center;
+            font-size: 15px;
+        } 
+        .extra-info span {
+            display: block; /* Make span display on a new line */
+            font-size: 12px; 
+            color: grey;
+        }
+        .tags {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        .tag {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            white-space: nowrap;
+        }
+        .screenshots {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+            margin: 20px;
+            height: 250px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .screenshot {
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            cursor: pointer;
+        } 
+        .demo-video {
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            flex-shrink: 30;
+        }
+        .features {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            flex-grow: 1;
+        }
+        .feature {
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            margin: 15% auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 80%;
+        }
+        .modal-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .modal-prev, .modal-next {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            user-select: none;
+        }
+        .modal-prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .modal-next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }

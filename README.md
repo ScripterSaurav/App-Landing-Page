@@ -1,8 +1,8 @@
-# App-Landing-Page
-A Html landing page for apps
+# App-Landing-Page 🔥
+> A Html landing page template for your apps.
 
-## See Demo Here👀
-[Live Demo Page 👀](https://scriptersaurav.github.io/App-Landing-Page/)
+## See Demo Here 👀
+👉 [Live Demo Page](https://scriptersaurav.github.io/App-Landing-Page/)
 
 
 ## To do 📋
@@ -13,3 +13,7 @@ A Html landing page for apps
 - [x] share button.
 - [ ] Floating action button.
 - [ ] and many more...
+
+
+## Support ❤
+👉 [Join Telegram Group](https://t.me/webcoderhub)
